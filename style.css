@@ -1,0 +1,41 @@
+/* Basic Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+
+/* Navbar using Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: #333;
+    color: white;
+}
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: white; text-decoration: none; }
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Simplest way to handle mobile nav for now */
+    .hero h1 { font-size: 1.5rem; }
+}
